@@ -1,0 +1,2 @@
+bonjour c juste pour initialiser la cnx a votre repository
+merci de garder ma branche apres le merge
