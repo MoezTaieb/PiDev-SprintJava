@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutEvenementController">
+   <children>
+      <Label layoutX="61.0" layoutY="63.0" text="Nom de l'evenement :" />
+      <Label layoutX="63.0" layoutY="129.0" text="Lieu de l'evenement :" />
+      <Label layoutX="62.0" layoutY="188.0" text="Date de l'evenement :" />
+      <Label layoutX="41.0" layoutY="245.0" text="Nombre Max de participants" />
+      <Label layoutX="58.0" layoutY="303.0" text="Affiche de l'venement :" />
+      <TextField fx:id="nomE" layoutX="257.0" layoutY="59.0" prefHeight="26.0" prefWidth="278.0" />
+      <Button layoutX="483.0" layoutY="477.0" mnemonicParsing="false" onAction="#addEvenement" text="Ajouter" />
+      <TextField fx:id="lieuE" layoutX="257.0" layoutY="125.0" prefHeight="26.0" prefWidth="278.0" />
+      <TextField fx:id="nbrmaxE" layoutX="257.0" layoutY="241.0" prefHeight="26.0" prefWidth="278.0" />
+      <ComboBox fx:id="produit" layoutX="258.0" layoutY="389.0" prefHeight="28.0" prefWidth="278.0" />
+      <Label layoutX="83.0" layoutY="394.0" prefHeight="18.0" prefWidth="127.0" text="Produit" />
+      <DatePicker fx:id="dateE" layoutX="259.0" layoutY="191.0" prefHeight="26.0" prefWidth="278.0" />
+      <Button fx:id="imageE" layoutX="387.0" layoutY="296.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" text="choisir" />
+   </children>
+</AnchorPane>

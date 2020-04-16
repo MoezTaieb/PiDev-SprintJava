@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutInviteController">
+   <children>
+      <Label layoutX="164.0" layoutY="33.0" text="Ajouter un invité ">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="139.0" text="Nom de l'invité :" />
+      <Label layoutX="112.0" layoutY="229.0" text="Prenom de l'invité :" />
+      <TextField fx:id="nomI" layoutX="277.0" layoutY="134.0" />
+      <TextField fx:id="prenomI" layoutX="277.0" layoutY="224.0" />
+      <Button fx:id="ajoutI" layoutX="338.0" layoutY="347.0" mnemonicParsing="false" onAction="#addInvite" text="Ajouter" />
+   </children>
+</AnchorPane>
