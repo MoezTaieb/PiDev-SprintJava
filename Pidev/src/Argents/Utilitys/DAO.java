@@ -41,7 +41,11 @@ public class DAO {
         argentList = new ArrayList<Argent>();
         
         while(result.next()){
+<<<<<<< HEAD
             Argent d = new Argent(result.getInt(1), result.getFloat(2), result.getDate(3));
+=======
+            Argent d = new Argent(result.getInt(1), result.getInt(2), result.getDate(3));
+>>>>>>> master
             argentList.add(d);
         }
         
@@ -63,7 +67,11 @@ public class DAO {
             argentList = new ArrayList<Argent>();
         
         while(result.next()){
+<<<<<<< HEAD
             Argent d = new Argent(result.getInt(1), result.getFloat(2), result.getDate(3));
+=======
+            Argent d = new Argent(result.getInt(1), result.getInt(2), result.getDate(3));
+>>>>>>> master
             argentList.add(d);
         }
         

@@ -14,19 +14,31 @@ import java.sql.Date;
 public class Argent {
     
     private int id;
+<<<<<<< HEAD
     private float montant;
+=======
+    private int montant;
+>>>>>>> master
     private Date date;
 
     public Argent() {
     }
 
+<<<<<<< HEAD
     public Argent(int id, float montant, Date date) {
+=======
+    public Argent(int id, int montant, Date date) {
+>>>>>>> master
         this.id = id;
         this.montant = montant;
         this.date = date;
     }
     
+<<<<<<< HEAD
     public Argent(float montant, Date date) {
+=======
+    public Argent(int montant, Date date) {
+>>>>>>> master
         this.montant = montant;
         this.date = date;
     }
@@ -47,7 +59,11 @@ public class Argent {
         this.id = id;
     }
 
+<<<<<<< HEAD
     public void setMontant(float montant) {
+=======
+    public void setMontant(int montant) {
+>>>>>>> master
         this.montant = montant;
     }
 
