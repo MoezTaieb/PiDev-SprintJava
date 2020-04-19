@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+ 
+<AnchorPane id="AnchorPane" layoutX="0" layoutY="0" prefHeight="713.0" prefWidth="1219.0"  xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.admin.UserManagementController">
+    <children>
+        <AnchorPane layoutX="29.0" layoutY="12.0" prefHeight="693.0" prefWidth="437.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+            <children>
+                <Separator layoutX="12.0" layoutY="44.0" prefHeight="3.0" prefWidth="415.0" />
+                <JFXTextField fx:id="usernameInput" layoutX="115.0" layoutY="139.0" prefHeight="30.0" prefWidth="309.0" />
+                <Label layoutX="5.0" layoutY="146.0" prefHeight="29.0" prefWidth="85.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Username" />
+                <Label layoutX="5.0" layoutY="212.0" prefHeight="18.0" prefWidth="79.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Last name" />
+                <Label layoutX="5.0" layoutY="266.0" prefHeight="29.0" prefWidth="85.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="First name" />
+                <Label layoutX="5.0" layoutY="381.0" prefHeight="29.0" prefWidth="79.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Address" />
+                <Label layoutX="5.0" layoutY="435.0" prefHeight="29.0" prefWidth="79.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Phone" />
+                <Label layoutX="5.0" layoutY="325.0" prefHeight="30.0" prefWidth="79.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Cin" />
+                <Label layoutX="5.0" layoutY="488.0" prefHeight="29.0" prefWidth="85.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Email" />
+                <JFXTextField fx:id="lastnameInput" layoutX="115.0" layoutY="197.0" prefHeight="30.0" prefWidth="309.0" />
+                <JFXTextField fx:id="firtnameInput" layoutX="115.0" layoutY="258.0" prefHeight="30.0" prefWidth="309.0" />
+                <JFXTextField fx:id="cinInput" layoutX="115.0" layoutY="317.0" prefHeight="30.0" prefWidth="309.0" />
+                <JFXTextField fx:id="addressInput" layoutX="115.0" layoutY="372.0" prefHeight="30.0" prefWidth="309.0" />
+                <JFXTextField fx:id="phoneinput" layoutX="115.0" layoutY="427.0" prefHeight="30.0" prefWidth="309.0" />
+                <JFXTextField fx:id="emailinput1" layoutX="115.0" layoutY="481.0" prefHeight="30.0" prefWidth="309.0" />
+                <JFXButton layoutX="101.0" layoutY="639.0" onAction="#addManagerAction" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #26B99A;" text="Add Manager" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="242.0" layoutY="639.0" onAction="#resetAction" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: #26B99A;" text="Reset" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="15.0" layoutY="14.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Add Camp Manager" />
+                <Label layoutX="5.0" layoutY="540.0" prefHeight="29.0" prefWidth="97.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Password" />
+                <Label layoutX="5.0" layoutY="600.0" prefHeight="27.0" prefWidth="108.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Confirmation" />
+                <JFXPasswordField fx:id="newPassword" layoutX="115.0" layoutY="534.0" prefHeight="27.0" prefWidth="309.0" />
+                <JFXPasswordField fx:id="newPasswordConf" layoutX="115.0" layoutY="586.0" prefHeight="27.0" prefWidth="309.0" />
+                <Label layoutX="5.0" layoutY="571.0" prefHeight="30.0" prefWidth="108.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Password" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="491.0" layoutY="11.0" prefHeight="693.0" prefWidth="700.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+            <children>
+                <JFXButton layoutX="21.0" layoutY="56.0" onAction="#blockAction" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: #26B99A;" text="Block" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="158.0" layoutY="56.0" onAction="#unblockAction" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: #26B99A;" text="Unlock" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <Separator layoutX="10.0" layoutY="43.0" prefHeight="3.0" prefWidth="680.0" />
+                <Label layoutX="14.0" layoutY="7.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Users List" />
+                <JFXButton layoutX="297.0" layoutY="56.0" onAction="#deleteAction" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: #26B99A;" text="Delete" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <TableView fx:id="urserList" layoutX="8.0" layoutY="117.0" prefHeight="570.0" prefWidth="686.0">
+                    <columns>
+                        <TableColumn fx:id="usernameC" prefWidth="154.0" text="Username" />
+                        <TableColumn fx:id="EmailC" prefWidth="192.0" text="Email" />
+                        <TableColumn fx:id="FirstnameC" prefWidth="93.0" text="First name" />
+                        <TableColumn fx:id="StatC" prefWidth="68.0" text="State" />
+                        <TableColumn fx:id="RolesC" prefWidth="83.0" text="Roles" />
+                        <TableColumn fx:id="LastnameC" prefWidth="95.0" text="Last name" />
+                    </columns>
+                </TableView>
+                <JFXTextField fx:id="searchField" layoutX="446.0" layoutY="56.0" prefHeight="40.0" prefWidth="133.0" promptText="search" />
+            </children>
+        </AnchorPane>
+    </children>
+        
+</AnchorPane>
+   

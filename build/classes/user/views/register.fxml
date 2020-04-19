@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="registerpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="900" stylesheets="@fedilahbib.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.UserController">
+    <center>
+        <Pane prefHeight="577.0" prefWidth="614.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="104.0" fitWidth="174.0" layoutX="254.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logos.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="30.0" layoutY="230.0" prefHeight="45.0" prefWidth="172.0" text="Password" textFill="#f50303">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="30.0" layoutY="130.0" prefHeight="45.0" prefWidth="199.0" text="Username" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+
+                <TextField fx:id="emailRegistation" layoutX="330.0" layoutY="180.0" prefHeight="36.0" prefWidth="260.0" />
+                <PasswordField fx:id="passwordRegister" layoutX="30.0" layoutY="280.0" prefHeight="36.0" prefWidth="260.0" />
+                <PasswordField fx:id="passwordConfRegister" layoutX="330.0" layoutY="280.0" prefHeight="36.0" prefWidth="260.0" />
+                <TextField fx:id="cinRegistation" layoutX="330.0" layoutY="480.0" prefHeight="36.0" prefWidth="260.0" />
+                <TextField fx:id="adresseRegistation" layoutX="30.0" layoutY="480.0" prefHeight="36.0" prefWidth="260.0" />
+                <TextField fx:id="telRegistation" layoutX="30.0" layoutY="580.0" prefHeight="36.0" prefWidth="260.0" />
+                <TextField fx:id="prenomRegistation" layoutX="30.0" layoutY="380.0" prefHeight="36.0" prefWidth="260.0" />
+                <TextField fx:id="nomRegistation" layoutX="330.0" layoutY="380.0" prefHeight="36.0" prefWidth="260.0" />
+                <TextField fx:id="usernameRegistation" layoutX="30.0" layoutY="180.0" prefHeight="36.0" prefWidth="260.0" />
+                <Label layoutX="330.0" layoutY="130.0" text="Email" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="330.0" layoutY="330.0" text="Nom" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="30.0" layoutY="530.0" text="Tel" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="30.0" layoutY="330.0" text="Prenom" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="330.0" layoutY="430.0" text="Cin" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="30.0" layoutY="430.0" text="Adresse" textFill="#f50808">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Label layoutX="330.0" layoutY="230.0" prefHeight="36.0" prefWidth="318.0" text="Password confirmation" textFill="#f50303">
+                    <font>
+                        <Font size="25" />
+                    </font>
+                </Label>
+                <Button fx:id="Registration" layoutX="330.0" layoutY="572.0" mnemonicParsing="false" onAction="#registationButtonAction" prefHeight="42.0" prefWidth="239.0" style="-fx-background-color: #4169E1;" text="Registration" />
+        
+                <Button layoutX="287.0" layoutY="647.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="37.0" prefWidth="172.0" style="-fx-background-color: transparent;" text="Login" textFill="#f80909">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-34.0" layoutY="645.0" mnemonicParsing="false" onAction="#forgotPasswordAction" prefHeight="41.0" prefWidth="301.0" style="-fx-background-color: transparent;" text="Forgot password" textFill="#f80808">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

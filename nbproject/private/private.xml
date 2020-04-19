@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>src/user/UserController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>157</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/pidev/profil.fxml</url>
+            <bookmark id="2">
+                <name/>
+                <line>32</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/DashAdminController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/UserController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/DAO/AnnonceDao.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/views/admin/userManagement.fxml</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/dash.fxml</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/AnnonceController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/service/UploadImage.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/views/ad.fxml</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/AdController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/ProfilController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/service/SendEmailSMTP.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/Action/DeleteAdActionEvent.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/CommentController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/entity/User.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/EditAdController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/admin/UserManagementController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/DashController.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/Communication/DAO/ReportDao.java</file>
+            <file>file:/C:/Users/fedi/Documents/NetBeansProjects/piDev/src/user/views/resetPassword.fxml</file>
+        </group>
+    </open-files>
+</project-private>
