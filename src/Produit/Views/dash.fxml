@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Produit.Controller.DashController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="1419.0" style="-fx-background-color: #2A3F54;" />
+      <VBox layoutY="40.0" prefHeight="688.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@views/logos.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="17.0" prefWidth="201.0" text=" " />
+                     
+                            
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#setProfil" prefHeight="47.0" prefWidth="202.0" text="Profil" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="8.0" onAction="#setAd" prefHeight="47.0" prefWidth="202.0" text="Ad    " textAlignment="JUSTIFY" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/postb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#setProduit" prefHeight="47.0" prefWidth="202.0" text="Produit" textAlignment="CENTER" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#setCat" prefHeight="47.0" prefWidth="202.0" text="Catégorie Produit" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+           
+         </children>
+      </VBox>
+      <AnchorPane fx:id="holderPane" layoutX="206.0" layoutY="40.0" prefHeight="713.0" prefWidth="1219.0" />
+      <JFXButton layoutY="729.0" onAction="#logout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;" text="Logout" textFill="#f20000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   
+   </children>
+</AnchorPane>

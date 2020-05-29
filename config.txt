@@ -1,0 +1,1 @@
+{"id":108,"categorie_id":29,"nomProduit":"Casquette","prixProduit":"3.5","qteProduit":"65","descriptionProduit":"Casquette.jpg","nomCategorie":"Vêtements"}
