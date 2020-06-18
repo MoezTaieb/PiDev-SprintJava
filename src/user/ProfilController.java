@@ -217,6 +217,7 @@ public class ProfilController extends CommonMethod implements Initializable {
             try {
 
                 int random_int = (int) (Math.random() * (1000 - 1000000 + 1) + 1000);
+
                 File newfile = new File(random_int + "-" + file.getName());
                 file.renameTo(newfile);
                 newfile.createNewFile();

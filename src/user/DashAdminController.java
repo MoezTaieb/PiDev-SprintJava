@@ -5,6 +5,8 @@
  */
 package user;
 
+import Produit.Controller.IndexProduitController;
+import Produit.Controller.indexCategorieController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -133,7 +135,20 @@ public class DashAdminController implements Initializable {
 
         setNode(myNewScene);
     }
+@FXML
+    private void Donation(ActionEvent event) throws IOException {
+      
+        
+        final Node source = (Node) event.getSource();
+        final Stage stage = (Stage) source.getScene().getWindow();
+        
+        Parent myNewScene =FXMLLoader.load(getClass().getResource("../Don/views/Dash.fxml"));
 
+            Scene scene = new Scene(myNewScene);
+            stage.setScene(scene);
+            stage.show();
+       
+    }
     @FXML
     private void logout(ActionEvent event) {
         final Node source = (Node) event.getSource();
@@ -147,5 +162,127 @@ public class DashAdminController implements Initializable {
         } catch (IOException ex) {
         }
     }
+    
+    
+    
+    
+     @FXML
+    private void setProduit(ActionEvent event) {
+                            AnchorPane    myNewScene = null;
+                   
+        try {
+                myNewScene =  FXMLLoader.load(getClass().getResource("../Produit/Views/indexProduit.fxml"));
+                
+ 
+         } catch (IOException ex) {
+            Logger.getLogger(IndexProduitController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+             setNode(myNewScene);
+    }
+
+    @FXML
+    private void setCat(ActionEvent event) {
+        AnchorPane    myNewScene = null;     
+        try {
+                myNewScene =  FXMLLoader.load(getClass().getResource("../Produit/Views/indexCategorie.fxml"));
+                
+ 
+         } catch (IOException ex) {
+            Logger.getLogger(indexCategorieController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+             setNode(myNewScene);
+    }
+    
+    
+    
+     @FXML 
+    private void indexCamp(ActionEvent event) { 
+        
+       
+        AnchorPane    myNewScene = null;
+                   
+        try {
+                myNewScene = FXMLLoader.load(getClass().getResource("/Camp/views/indexCamp.fxml"));
+                
+ 
+         } catch (IOException ex) {
+        }
+
+     setNode(myNewScene);
+ 
+}
+    
+    private void AjouterCamp(ActionEvent event) {
+ 
+                              AnchorPane    myNewScene = null;
+                   
+        try {
+                myNewScene =  FXMLLoader.load(getClass().getResource("/Camp/user/views/profil.fxml"));
+                
+ 
+         } catch (IOException ex) {
+        }
+
+             setNode(myNewScene);
+
+        
+    }
+   
+    @FXML 
+    private void indexRefugie(ActionEvent event) { 
+        
+       
+        AnchorPane    myNewScene = null;
+                   
+        try {
+                myNewScene = FXMLLoader.load(getClass().getResource("../Camp/views/indexRefugie.fxml"));
+                
+ 
+         } catch (IOException ex) {
+        }
+
+     setNode(myNewScene);
+ 
+}
+    
+    private void AjouterRefugie(ActionEvent event) {
+ 
+                              AnchorPane    myNewScene = null;
+                   
+        try {
+                myNewScene =  FXMLLoader.load(getClass().getResource("../Camp/user/views/AjouterRefugie.fxml"));
+                
+ 
+         } catch (IOException ex) {
+        }
+
+             setNode(myNewScene);
+
+        
+    }
+       @FXML
+//    private void eventButton(ActionEvent event) {
+//        
+        
+        
+         private void lstE(ActionEvent event) throws IOException {
+        
+          AnchorPane    myNewScene = null;
+          
+                   
+        try {
+                myNewScene =  FXMLLoader.load(getClass().getResource("/Evenement/Views/ListEvenement.fxml"));
+                
+ 
+         } catch (IOException ex) {
+           
+        }
+
+           setNode(myNewScene);
+
+         }
+    
 
 }

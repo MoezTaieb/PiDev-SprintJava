@@ -5,6 +5,7 @@
  */
 package user;
 
+import Don.Service.EquipmentService;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -25,6 +26,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import pidev.PiDev;
+import tray.notification.NotificationType;
+import tray.notification.TrayNotification;
 
 /**
  *
@@ -38,6 +41,27 @@ public class DashController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
+        int i=0;
+         EquipmentService s=new EquipmentService();
+                   s.notif();
+                   String nb="";
+                    String test = "notification";
+                   String title = s.notif(); ;
+                   if (title.equals(nb))
+              // String message = "Nom : "+c.getNomProduit()+" / Prix : "+P.getPrixProduit()+" / Quantité : "+P.getQteProduit();
+                  System.out.println("rien a afficher");
+               else
+                   {String message="vouz avez ajouter un equipment qui n est pas encore recu veuillez traiter cette notification "+test ;
+
+                TrayNotification tray = new TrayNotification();
+                tray.setTitle(title);
+                tray.setMessage(message);
+                tray.setNotificationType(NotificationType.WARNING);
+                tray.showAndDismiss(Duration.seconds(5));
+                   }
+                        
+        
+        
         AnchorPane myNewScene = null;
         try {
             myNewScene = FXMLLoader.load(getClass().getResource("views/profil.fxml"));
@@ -110,7 +134,71 @@ public class DashController implements Initializable {
 
         setNode(myNewScene);
     }
+ @FXML
+    private void AddEquipment(ActionEvent event) {
 
+        AnchorPane myNewScene = null;
+
+        try {
+            myNewScene = FXMLLoader.load(getClass().getResource("../Don/Views/AjoutEquipment.fxml"));
+
+        } catch (IOException ex) {
+            Logger.getLogger(ProfilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        setNode(myNewScene);
+    }
+    
+    @FXML
+    private void AddService(ActionEvent event) {
+
+        AnchorPane myNewScene = null;
+
+        try {
+            myNewScene = FXMLLoader.load(getClass().getResource("../Don/Views/AjoutService.fxml"));
+
+        } catch (IOException ex) {
+            Logger.getLogger(ProfilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        setNode(myNewScene);
+    }
+
+    //
+   @FXML
+ 
+        
+         private void lstE(ActionEvent event) throws IOException {
+        
+          AnchorPane    myNewScene = null;
+          
+                   
+        try {
+                myNewScene =  FXMLLoader.load(getClass().getResource("/Evenement/Views/ListeEventUser.fxml"));
+                
+ 
+         } catch (IOException ex) {
+           
+        }
+
+           setNode(myNewScene);
+
+        
+        
+    }
+    
+    
+       
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @FXML
     private void logout(ActionEvent event) {
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="acc" prefHeight="602.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Evenement.Controller.AjoutEvenementController">
+   <children>
+      <Label layoutX="79.0" layoutY="104.0" text="Nom de l'evenement :" />
+      <Label layoutX="81.0" layoutY="170.0" text="Lieu de l'evenement :" />
+      <Label layoutX="80.0" layoutY="229.0" text="Date de l'evenement :" />
+      <Label layoutX="56.0" layoutY="308.0" text="Nombre Max de participants" />
+      <Label layoutX="76.0" layoutY="371.0" text="Affiche de l'venement :" />
+      <TextField fx:id="nomE" layoutX="365.0" layoutY="99.0" prefHeight="31.0" prefWidth="410.0" />
+      <Button layoutX="501.0" layoutY="518.0" mnemonicParsing="false" onAction="#addEvenement" text="Ajouter" textAlignment="CENTER" textFill="#1527ee" textOverrun="CENTER_ELLIPSIS" />
+      <TextField fx:id="lieuE" layoutX="363.0" layoutY="165.0" prefHeight="31.0" prefWidth="410.0" />
+      <TextField fx:id="nbrmaxE" layoutX="363.0" layoutY="303.0" prefHeight="31.0" prefWidth="410.0" />
+      <ComboBox fx:id="produit" layoutX="365.0" layoutY="441.0" prefHeight="31.0" prefWidth="410.0" />
+      <Label layoutX="89.0" layoutY="446.0" prefHeight="18.0" prefWidth="127.0" text="Produit" />
+      <DatePicker fx:id="dateE" layoutX="363.0" layoutY="235.0" prefHeight="31.0" prefWidth="410.0" />
+      <Button fx:id="imageE" layoutX="476.0" layoutY="366.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="157.0" text="choisir" textFill="#150dee" />
+      <Label layoutX="320.0" layoutY="14.0" prefHeight="77.0" prefWidth="312.0" text="Ajout d'un évnement" textFill="#f52323">
+         <font>
+            <Font name="System Italic" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="editPanee" layoutX="0" layoutY="0" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Communication.CommentController">
+<AnchorPane id="AnchorPane" fx:id="editPanee" layoutX="0" layoutY="0" prefHeight="713.0" prefWidth="1219.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Communication.CommentController">
     <children>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
             <children>

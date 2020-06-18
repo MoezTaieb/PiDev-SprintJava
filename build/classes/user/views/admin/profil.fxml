@@ -5,17 +5,13 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" layoutX="0" layoutY="0" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ProfilController">
+<AnchorPane id="AnchorPane" layoutX="0" layoutY="0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.ProfilController">
     <children>
-        <AnchorPane layoutX="29.0" layoutY="12.0" prefHeight="693.0" prefWidth="437.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+        <AnchorPane layoutX="29.0" layoutY="-9.0" prefHeight="664.0" prefWidth="437.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
             <children>
                 <Separator layoutX="12.0" layoutY="44.0" prefHeight="3.0" prefWidth="415.0" />
                 <JFXTextField fx:id="usernameInput" layoutX="107.0" layoutY="191.0" prefHeight="30.0" prefWidth="309.0" />
@@ -52,7 +48,7 @@
                 </JFXButton>
             </children>
         </AnchorPane>
-        <AnchorPane layoutX="491.0" layoutY="11.0" prefHeight="693.0" prefWidth="717.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+        <AnchorPane layoutX="488.0" layoutY="20.0" prefHeight="662.0" prefWidth="684.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
             <children>
                 <Label layoutX="14.0" layoutY="60.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Old Password" />
                 <Label layoutX="14.0" layoutY="116.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="New Password" />
@@ -77,4 +73,3 @@
     </children>
         
 </AnchorPane>
-

@@ -101,9 +101,6 @@ CREATE TABLE IF NOT EXISTS `affectations` (
 -- Déchargement des données de la table `affectations`
 --
 
-INSERT INTO `affectations` (`id`, `remarque`, `date`) VALUES
-(2, 'aaaaa', '2015-01-01'),
-(3, 'mm', '2015-01-01');
 
 -- --------------------------------------------------------
 
@@ -127,13 +124,6 @@ CREATE TABLE IF NOT EXISTS `annonce` (
 -- Déchargement des données de la table `annonce`
 --
 
-INSERT INTO `annonce` (`id`, `posteur_id`, `titreAnnonce`, `descriptionAnnonce`, `imageUrlAnnonce`, `dateAnnonce`) VALUES
-(1, 4, 'edzedzedzdzdzd', 'dzedzedzedezdzedz', '10861192.jpeg', '2020-02-25 19:28:46'),
-(2, 13, 'lk', 'lk', '76962500-hand-writing-conclusion-with-marker-concept-background.jpeg', '2020-02-25 21:59:18'),
-(3, 5, 'deded', 'dedzdzedzedzdzdezd', NULL, '2020-02-26 15:27:11'),
-(4, 16, 'dzdadzdzadza', 'azdzadd', NULL, '2020-02-27 10:59:02'),
-(5, 16, 'zadza', 'dazddadazd', NULL, '2020-02-27 10:59:30'),
-(6, 16, 'adzad', 'adadada', NULL, '2020-02-27 10:59:56');
 
 -- --------------------------------------------------------
 
@@ -174,14 +164,7 @@ CREATE TABLE IF NOT EXISTS `camp` (
 -- Déchargement des données de la table `camp`
 --
 
-INSERT INTO `camp` (`id`, `responsable_id`, `nomCamp`, `adresseCamp`, `nbrefugier`) VALUES
-(2, 4, 'a', 'llzl', 6),
-(3, 5, 'sfax', 'sfax', 69),
-(4, 7, 'sousse', 'sousse', 65),
-(5, 6, 'kairouan', 'kairouan', 45),
-(8, 8, 'wwww', 'wwww', 96),
-(9, 9, 'xcxcx', 'xcxxc', 63),
-(10, 10, 'gffggf', 'fgfgfgf', 70);
+
 
 -- --------------------------------------------------------
 
@@ -200,10 +183,6 @@ CREATE TABLE IF NOT EXISTS `categorie_equipment` (
 -- Déchargement des données de la table `categorie_equipment`
 --
 
-INSERT INTO `categorie_equipment` (`id`, `nomCategorie`) VALUES
-(99, 'categorie 2'),
-(111, 'Catégorie 1'),
-(112, 'categorie 4');
 
 -- --------------------------------------------------------
 
@@ -222,10 +201,7 @@ CREATE TABLE IF NOT EXISTS `categorie_produit` (
 -- Déchargement des données de la table `categorie_produit`
 --
 
-INSERT INTO `categorie_produit` (`id`, `nomCategorie`) VALUES
-(1, 'msd:'),
-(2, 'al'),
-(3, 'Catégorie 3');
+
 
 -- --------------------------------------------------------
 
@@ -244,11 +220,7 @@ CREATE TABLE IF NOT EXISTS `categorie_service` (
 -- Déchargement des données de la table `categorie_service`
 --
 
-INSERT INTO `categorie_service` (`id`, `nomCategorie`) VALUES
-(3, 'coiffeur'),
-(4, 'dentiste'),
-(5, 'host'),
-(7, 'danseur');
+
 
 -- --------------------------------------------------------
 
@@ -269,10 +241,6 @@ CREATE TABLE IF NOT EXISTS `classe` (
 -- Déchargement des données de la table `classe`
 --
 
-INSERT INTO `classe` (`id`, `nom`, `nbModules`, `nbEtudiants`) VALUES
-(1, '3a', 10, 31),
-(3, '2a', 4, 30),
-(22, '4 infi', 9, 21);
 
 -- --------------------------------------------------------
 
@@ -312,8 +280,6 @@ CREATE TABLE IF NOT EXISTS `demande` (
 -- Déchargement des données de la table `demande`
 --
 
-INSERT INTO `demande` (`id`, `remarque`, `etat`, `cas`, `date`) VALUES
-(1, 'tedt', 'test', 'test', '2015-01-01');
 
 -- --------------------------------------------------------
 
@@ -369,14 +335,6 @@ CREATE TABLE IF NOT EXISTS `equipment` (
 -- Déchargement des données de la table `equipment`
 --
 
-INSERT INTO `equipment` (`id`, `affectation_id`, `evenement_id`, `nomEquipment`, `etatEquipment`, `dateDonEquipment`, `CategorieEquipment_id`, `nbEquipment`, `demandes_id`, `idU`, `nomCategorie`) VALUES
-(1, NULL, NULL, 'tetsttt', 'recuu', '2020-03-31 22:00:00', 112, 3, NULL, NULL, 'categorie 3'),
-(3, NULL, NULL, 'equipment 2', 'recu', '2020-04-01 22:00:00', 112, 3, NULL, NULL, 'categorie 4'),
-(144, NULL, NULL, 'table', 'En Cours', '2020-04-03 00:14:30', 112, 3, NULL, NULL, 'categorie 3'),
-(145, NULL, NULL, 'mekla', 'En Cours', '2020-04-03 00:28:36', 99, 5, NULL, NULL, 'categorie 2'),
-(151, NULL, NULL, 'equipment 5', 'En Cours', '2020-04-11 04:26:34', 111, 3, NULL, NULL, 'Catégorie 1'),
-(152, NULL, NULL, 'user', 'En Cours', '2020-04-12 23:13:10', 99, 5, NULL, 1, 'categorie 2'),
-(153, NULL, NULL, 'uu', 'En Cours', '2020-04-12 23:25:39', 99, 5, NULL, 1, 'categorie 2');
 
 -- --------------------------------------------------------
 
@@ -401,10 +359,6 @@ CREATE TABLE IF NOT EXISTS `evenement` (
 -- Déchargement des données de la table `evenement`
 --
 
-INSERT INTO `evenement` (`id`, `nomEvenement`, `lieuEvenement`, `dateEvenement`, `nombreMaxParticipant`, `image`, `id_produit`) VALUES
-(2, 'mmm', 'kk', '2021-03-01 00:12:00', 12, 'ef82a924f5b660b228a53b854f3b2486.jpeg', NULL),
-(3, 'ertretret', 'ertret', '2015-01-01 00:00:00', 25, '0d770857a5950226ecc0033cec3bd7fd.jpeg', 5),
-(4, 'moez', 'kdqjkqdjkds', '2021-01-01 00:00:00', 52, 'abc3969d8bd4f36f0030a506ab6cbaf8.png', 5);
 
 -- --------------------------------------------------------
 
@@ -446,21 +400,6 @@ CREATE TABLE IF NOT EXISTS `fos_user` (
 -- Déchargement des données de la table `fos_user`
 --
 
-INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `confirmation_token`, `password_requested_at`, `roles`, `cinUser`, `nomUser`, `prenomUser`, `adresseUser`, `telUser`, `imageUrlUser`, `typeUser`, `charge_id`) VALUES
-(4, 'admin', 'admin', 'mohamedmibe.louhichi@esprit.tn', 'mohamedmibe.louhichi@esprit.tn', 1, NULL, '$2y$13$8H3uDGiDq9b.N02Y9ZvMUOk4pcnE5O7uysaLThsOiW.5NdXxOVAaC', '2020-03-05 10:22:50', NULL, NULL, 'a:2:{i:0;s:10:\" ROLE_USER\";i:1;s:10:\"ROLE_ADMIN\";}', '118022222', 'admin', 'admin', 'admin', '53418774', NULL, NULL, NULL),
-(5, 'user', 'user', 'amin@amin.com', 'amin@amin.com', 1, NULL, '$2y$13$dnRvqXKzBHCzCa9UQHbN8uM3gKj9dGVUihStHDjEZ1ASLaDc5sxve', '2020-02-27 08:50:00', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', 'user', 'user', 'user', 'user', 'user', NULL, NULL, NULL),
-(6, 'usera', 'usera', 'amin@amin.zcom', 'amin@amin.zcom', 1, NULL, '$2y$13$vfrxLVZw8EtfwVfZB.W2l.Mclli6c3cr/BYyXRxpUZ.oNjpSME4eW', '2020-02-16 21:05:35', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', 'aa', 'users', 'users', 'aaa', 'aa', NULL, NULL, NULL),
-(7, 'achref', 'achref', 'acherf@hj.vom', 'acherf@hj.vom', 1, NULL, '$2y$13$B2dBYueAkOEFzmNNnW8PIuiNje0fQx0DepC3x1/MD4.nZNgnlWGCO', '2020-02-19 23:05:58', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', 'achref', 'achref', 'achref', 'achref', 'achref', NULL, NULL, NULL),
-(8, 'wassim1', 'wassim1', 'wassim1@wassim1.com', 'wassim1@wassim1.com', 1, NULL, '$2y$13$1QTA9VQ/TftD/Fns6kKqPueJyTrAZvuBOsoBssU6tgiyRo7h7IuUO', '2020-02-25 20:32:46', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '9656', 'wassim1', 'wassim1', 'wassim1', '1245', NULL, NULL, NULL),
-(9, 'wassim2', 'wassim2', 'wassim2@wassim2.com', 'wassim2@wassim2.com', 1, NULL, '$2y$13$MCu9Tw20BozobPT8zjp.h.5iC.s0Bxtsuj3SXSfTKAcM7Z.vIajBi', '2020-02-25 20:34:04', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '78962', 'wassim2', 'wassim2', 'wassim2', '963', NULL, NULL, NULL),
-(10, 'wassim3', 'wassim3', 'wassim3@wassim2.com', 'wassim3@wassim2.com', 1, NULL, '$2y$13$xd0cxzS/Z1f5jvKd09UKh.mEkI0wTr6gqw3smlUsJgGBnWpd/mvbu', '2020-02-25 20:35:07', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '746332', 'wassim3', 'wassim3', 'wassim3', '1023', NULL, NULL, NULL),
-(11, 'wassim4', 'wassim4', 'wassim4@wassim2.com', 'wassim4@wassim2.com', 1, NULL, '$2y$13$es0PVi.r3ZOWE0g0eBU28OFxuKRyYAQ/6696XJqiGGoGwzzRwBVxq', '2020-02-25 20:36:54', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '204', 'wassim4', 'wassim4', 'wassim4', '798922', NULL, NULL, NULL),
-(12, 'wassim5', 'wassim5', 'wassim5@wassim2.com', 'wassim5@wassim2.com', 1, NULL, '$2y$13$UYdWxp2zGgY2yW2FfJRGmOuYnSfmruvKlW4CbIsHqGitKb7On67Bm', '2020-02-25 20:38:37', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '45522', 'wassim5', 'wassim5', 'wassim5', '6655', NULL, NULL, NULL),
-(13, 'wassim6', 'wassim6', 'wassim6@wassim2.com', 'wassim6@wassim2.com', 1, NULL, '$2y$13$gH5B8tPDkOdPnD3oeD385eIexs/Pk0BVQpuBFDChUe2hz7ojci4mm', '2020-02-25 20:39:30', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '459695', 'wassim6', 'wassim6', 'wassim6', '79892212', NULL, NULL, NULL),
-(14, 'amin', 'amin', 'mohamedamine.louhichi@esprit.tn', 'mohamedamine.louhichi@esprit.tn', 1, NULL, '$2y$13$abLjOq4YIvsxIFSjUUsQRuP5xvLAn/rmmTul/4Rk7hzq.LiqKcw5K', '2020-02-25 23:53:37', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', '459695', 'amin', 'amin', 'dsd', '2222', NULL, NULL, NULL),
-(15, 'fedi', 'fedi', 'fedi@fedi.com', 'fedi@fedi.com', 1, NULL, '$2y$13$BB7inNS/b6qqrsZBo.mr/uHPrcPbMOUil/JsX4Ph1zox.g9wlvVGm', '2020-02-27 10:20:24', NULL, NULL, 'a:1:{i:0;s:10:\" ROLE_USER\";}', 'fedi', 'fedi', 'fedi', 'fedi', 'fedi', NULL, NULL, NULL),
-(16, 'amine', 'amine', 'aminlouhichi13@gmail.com', 'aminlouhichi13@gmail.com', 1, NULL, '$2y$13$xp36dzqX7/XdJXDee7FS8OTbOAsg3fLjqCN11TnWF0cDRoFgPKVfG', '2020-02-27 10:31:56', NULL, NULL, 'a:2:{i:0;s:10:\" ROLE_USER\";i:1;s:5:\"ADMIN\";}', '55555', 'amine', 'amine', 'amine', '53418774', NULL, NULL, NULL),
-(17, 'admin1', 'admin1', 'fedi.lahbib1@esprit.tn', 'fedi.lahbib1@esprit.tn', 1, NULL, '$2y$13$MRzNZxtggFvE/jkslTLnnOBCQXDR9ukRb3F0EA88AjxJd6JlylQx2', '2020-02-27 10:41:13', NULL, NULL, 'a:2:{i:0;s:11:\" ROLE_ADMIN\";i:1;s:10:\"ROLE_ADMIN\";}', '53418774', 'admin1', 'admin1', 'admin1', '53418774', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -500,9 +439,6 @@ CREATE TABLE IF NOT EXISTS `message` (
 -- Déchargement des données de la table `message`
 --
 
-INSERT INTO `message` (`id`, `emetteur_id`, `destinataire_id`, `contenuMessage`, `dateEnvoiMessage`) VALUES
-(1, 15, NULL, 'tel:+21652291826 contenu:Avenger 3A20', '2020-02-26 14:02:21');
-
 -- --------------------------------------------------------
 
 --
@@ -524,11 +460,6 @@ CREATE TABLE IF NOT EXISTS `messagemetadata` (
 -- Déchargement des données de la table `messagemetadata`
 --
 
-INSERT INTO `messagemetadata` (`id`, `message_id`, `participant_id`, `is_read`) VALUES
-(1, 1, 6, 0),
-(2, 1, 4, 1),
-(3, 2, 4, 0),
-(4, 2, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -552,9 +483,6 @@ CREATE TABLE IF NOT EXISTS `message_user` (
 -- Déchargement des données de la table `message_user`
 --
 
-INSERT INTO `message_user` (`id`, `thread_id`, `sender_id`, `body`, `created_at`) VALUES
-(1, 1, 4, 'frfrefrefrefrefrfrefer', '2020-02-25 19:21:10'),
-(2, 2, 5, 'ssssss', '2020-02-26 15:30:48');
 
 -- --------------------------------------------------------
 
@@ -576,74 +504,7 @@ CREATE TABLE IF NOT EXISTS `notifications` (
 -- Déchargement des données de la table `notifications`
 --
 
-INSERT INTO `notifications` (`id`, `contenu`, `vue`, `userNotifier_id`) VALUES
-(1, 'rfrfrfrfrfrfrfrf', 1, 4),
-(2, 'rfrfrfrfrfrfrfrf', 1, 5),
-(3, 'rfrfrfrfrfrfrfrf', 0, 6),
-(4, 'rfrfrfrfrfrfrfrf', 0, 7),
-(5, 'ssssssss', 0, 4),
-(6, 'ssssssss', 1, 5),
-(7, 'ssssssss', 0, 6),
-(8, 'ssssssss', 0, 7),
-(9, 'deded', 0, 4),
-(10, 'deded', 1, 5),
-(11, 'deded', 0, 6),
-(12, 'deded', 0, 7),
-(13, '20/37', 0, 4),
-(14, '20/37', 1, 5),
-(15, '20/37', 0, 6),
-(16, '20/37', 0, 7),
-(17, 'frfrfrfref', 0, 4),
-(18, 'frfrfrfref', 1, 5),
-(19, 'frfrfrfref', 0, 6),
-(20, 'frfrfrfref', 0, 7),
-(21, 'sssssss', 1, 5),
-(22, 'sssss', 0, 4),
-(23, 'sssss', 1, 5),
-(24, 'sssss', 0, 6),
-(25, 'sssss', 0, 7),
-(26, 'ssss', 0, 4),
-(27, 'ssss', 1, 5),
-(28, 'ssss', 0, 6),
-(29, 'ssss', 0, 7),
-(30, 'xdededzedzedzeddzdze', 0, 4),
-(31, 'xdededzedzedzeddzdze', 1, 5),
-(32, 'xdededzedzedzeddzdze', 0, 6),
-(33, 'xdededzedzedzeddzdze', 0, 7),
-(34, 'xdededzedzedzeddzdze', 0, 8),
-(35, 'xdededzedzedzeddzdze', 0, 9),
-(36, 'xdededzedzedzeddzdze', 0, 10),
-(37, 'xdededzedzedzeddzdze', 0, 11),
-(38, 'xdededzedzedzeddzdze', 0, 12),
-(39, 'xdededzedzedzeddzdze', 0, 13),
-(40, 'xdededzedzedzeddzdze', 0, 14),
-(41, 'xdededzedzedzeddzdze', 0, 15),
-(42, 'dedzdezdzdzdz', 0, 4),
-(43, 'dedzdezdzdzdz', 1, 5),
-(44, 'dedzdezdzdzdz', 0, 6),
-(45, 'dedzdezdzdzdz', 0, 7),
-(46, 'dedzdezdzdzdz', 0, 8),
-(47, 'dedzdezdzdzdz', 0, 9),
-(48, 'dedzdezdzdzdz', 0, 10),
-(49, 'dedzdezdzdzdz', 0, 11),
-(50, 'dedzdezdzdzdz', 0, 12),
-(51, 'dedzdezdzdzdz', 0, 13),
-(52, 'dedzdezdzdzdz', 0, 14),
-(53, 'dedzdezdzdzdz', 0, 15),
-(54, 'ssssssssssssssss', 0, 4),
-(55, 'ssssssssssssssss', 0, 5),
-(56, 'ssssssssssssssss', 0, 6),
-(57, 'ssssssssssssssss', 0, 7),
-(58, 'ssssssssssssssss', 0, 8),
-(59, 'ssssssssssssssss', 0, 9),
-(60, 'ssssssssssssssss', 0, 10),
-(61, 'ssssssssssssssss', 0, 11),
-(62, 'ssssssssssssssss', 0, 12),
-(63, 'ssssssssssssssss', 0, 13),
-(64, 'ssssssssssssssss', 0, 14),
-(65, 'ssssssssssssssss', 0, 15),
-(66, 'ssssssssssssssss', 0, 16),
-(67, 'ssssssssssssssss', 0, 17);
+
 
 -- --------------------------------------------------------
 
@@ -666,8 +527,6 @@ CREATE TABLE IF NOT EXISTS `participation` (
 -- Déchargement des données de la table `participation`
 --
 
-INSERT INTO `participation` (`id`, `participant_id`, `evenement_id`, `dateParticipation`) VALUES
-(9, 17, 3, '2020-02-27 10:49:45');
 
 -- --------------------------------------------------------
 
@@ -692,18 +551,6 @@ CREATE TABLE IF NOT EXISTS `produit` (
 -- Déchargement des données de la table `produit`
 --
 
-INSERT INTO `produit` (`id`, `categorie_id`, `nomProduit`, `prixProduit`, `qteProduit`, `descriptionProduit`, `photo`) VALUES
-(3, 1, 'Produit 2', 2, 3, 'aeaze', '00404ec50efcc070c1bf3df362848452.jpeg'),
-(4, 2, 'P', 23, 2, 'zae', '02ae8258ef6fb3d88c4e12b62248e227.jpeg'),
-(5, 3, 'llll', 32, 20, 'zaeaze', 'd106f97ff7aeb1842b1400cab3c73059.jpeg'),
-(7, 2, 'T-shirt', 20, 20, 'eazeaze', '48927bde585588b4ffbf196b0a9eccc2.png'),
-(8, 1, 'ezaeaze', 23, 23, 'zaeaze', '5eff5021fc7d40a0ceab7b3ceb51522d.png'),
-(9, 1, 'pazeaze', 23, 23, 'eazeaz', '5bc47e08c23ae22029eaaefa2a923557.png'),
-(10, 1, 'papap', 111, 11, 'llz', '2d2567b774e2a84ac1a4254ee9f70ee8.jpeg'),
-(11, 1, 'lalal', 458, 7, 'aùmek ok k', 'd2599f17596f3ff1a440a3ae128696fd.jpeg'),
-(12, 1, 'aeaze', 23, 32, 'eaeaze', '94a8e0bf8741d1073ebeab05d2c1ccc5.png'),
-(13, 1, 'Paaezea', 22, 0, 'eazea', '2a9d9eb891e6a3e322c5fda70d9a6571.png');
-
 -- --------------------------------------------------------
 
 --
@@ -725,11 +572,7 @@ CREATE TABLE IF NOT EXISTS `produitcomment` (
 -- Déchargement des données de la table `produitcomment`
 --
 
-INSERT INTO `produitcomment` (`id`, `produit_id`, `user_id`, `content`) VALUES
-(1, NULL, 14, 'kjlkjlj'),
-(2, 3, 15, 'test pour le user fedi\r\n'),
-(3, 3, 16, 'test pour le user amine'),
-(4, 3, 16, 'kekz');
+
 
 -- --------------------------------------------------------
 
@@ -751,9 +594,6 @@ CREATE TABLE IF NOT EXISTS `produitlike` (
 -- Déchargement des données de la table `produitlike`
 --
 
-INSERT INTO `produitlike` (`id`, `produit_id`, `user_id`) VALUES
-(2, 3, 15),
-(4, 3, 16);
 
 -- --------------------------------------------------------
 
@@ -796,16 +636,6 @@ CREATE TABLE IF NOT EXISTS `refugie` (
 -- Déchargement des données de la table `refugie`
 --
 
-INSERT INTO `refugie` (`id`, `camp_id`, `nomRefugie`, `prenomRefugie`, `adresseRefugie`, `telRefugie`, `numassportRefugie`, `nationaliteRefugie`, `image`) VALUES
-(1, NULL, 'zolml', 'llzml', 'lzmlmzl', '245', '545', 'kkd', '5d388299238cb85ff7907b9f5728b2ef.jpeg'),
-(2, 2, 'bilel', 'z', 'z', '5', '5', 'ezr', '1d550fb449c9452fea49fdf9beda1a25.jpeg'),
-(3, 2, 'achref', 'achref', 'lzmlmzl', '245', '5', 'tunis', '19f2b276982bb88e549efda8058aac55.jpeg'),
-(4, 3, 'amin', 'ami', 'z', '445', '3223', 'tunis', '5e244caeb05df28727e8c2e5b5992473.jpeg'),
-(5, 4, 'wassim6', 'wassim6', 'wwq', '5546', '546564', 'tunis', 'b7d337b47683dc986916a567506a4260.jpeg'),
-(6, 5, 'wassim4', 'wassim4', 'wqshg', '5445', '45546', 'tunis', '038cd378bb8f5bc73910cb0ce7088d86.jpeg'),
-(7, 5, 'wassim2', 'wassim2', 'wawwa', '0133', '96321', 'tunis', '949c5bcc40ee26e9664b09222d17783c.jpeg'),
-(8, 3, 'aymen', 'aymen', 'aymen', '35652', '96', 'tunis', 'fbb1198114759d94979349eb6c107dca.jpeg'),
-(9, 3, '5', '5', '5', '55', '55', '55', 'e854a8db40146040ee20e4b110b9884d.jpeg');
 
 -- --------------------------------------------------------
 
@@ -832,10 +662,6 @@ CREATE TABLE IF NOT EXISTS `service` (
 -- Déchargement des données de la table `service`
 --
 
-INSERT INTO `service` (`id`, `nomService`, `descriptionService`, `dateDon`, `categorieService_id`, `affectation_id`, `nomCategorie`, `idU`) VALUES
-(81, 'amin', 'mamam', '2020-04-02 22:00:00', 4, NULL, 'dentiste', 1),
-(82, 'service 2', 'description du servce 2', '2020-04-11 03:34:10', 7, NULL, 'danseur', NULL),
-(83, 'user', 'zlzlz', '2020-04-13 02:53:33', 4, NULL, 'dentiste', 1);
 
 -- --------------------------------------------------------
 
@@ -858,9 +684,7 @@ CREATE TABLE IF NOT EXISTS `thread` (
 -- Déchargement des données de la table `thread`
 --
 
-INSERT INTO `thread` (`id`, `created_by_id`, `subject`, `created_at`, `is_spam`) VALUES
-(1, 4, 'usera', '2020-02-25 19:21:10', 0),
-(2, 5, 'admin', '2020-02-26 15:30:48', 0);
+
 
 -- --------------------------------------------------------
 
@@ -884,13 +708,6 @@ CREATE TABLE IF NOT EXISTS `threadmetadata` (
 --
 -- Déchargement des données de la table `threadmetadata`
 --
-
-INSERT INTO `threadmetadata` (`id`, `thread_id`, `participant_id`, `is_deleted`, `last_participant_message_date`, `last_message_date`) VALUES
-(1, 1, 6, 0, NULL, '2020-02-25 19:21:10'),
-(2, 1, 4, 0, '2020-02-25 19:21:10', NULL),
-(3, 2, 4, 0, NULL, '2020-02-26 15:30:48'),
-(4, 2, 5, 0, '2020-02-26 15:30:48', NULL);
-
 --
 -- Contraintes pour les tables déchargées
 --

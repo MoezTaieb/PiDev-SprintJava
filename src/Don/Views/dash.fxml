@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="691.0" prefWidth="1354.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Don.Controller.DashController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="1495.0" style="-fx-background-color: #2A3F54;" />
+      <VBox layoutY="40.0" prefHeight="690.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logos.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="17.0" prefWidth="201.0" text=" " />
+                     
+                            
+            <JFXButton onAction="#catEquipment" prefHeight="47.0" prefWidth="202.0" text="Categorie Equipment" textAlignment="CENTER" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton graphicTextGap="8.0" onAction="#catServie" prefHeight="47.0" prefWidth="202.0" text="categorie Service     " textAlignment="CENTER" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <JFXButton graphicTextGap="8.0" onAction="#Service" prefHeight="47.0" prefWidth="202.0" text=" Service                  " textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton graphicTextGap="8.0" onAction="#Equipment" prefHeight="47.0" prefWidth="202.0" text="equipment             " textAlignment="CENTER" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton graphicTextGap="8.0" onAction="#traiter" prefHeight="47.0" prefWidth="202.0" text="traiter equipment" textAlignment="CENTER" textFill="#a1aec4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+           
+         </children>
+      </VBox>
+      <AnchorPane fx:id="holderPane" layoutX="200.0" layoutY="58.0" prefHeight="713.0" prefWidth="1219.0">
+         <children>
+            <AnchorPane layoutX="44.0" layoutY="14.0" prefHeight="312.0" prefWidth="406.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+               <children>
+                  <Separator layoutY="35.0" prefHeight="3.0" prefWidth="448.0" />
+                  <Label layoutX="14.0" layoutY="7.0" prefHeight="30.0" prefWidth="285.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Statistique des Equipments" />
+                  <PieChart fx:id="PieChart" layoutX="21.0" layoutY="67.0" prefHeight="364.0" prefWidth="406.0" title="equipment/service" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <JFXButton layoutY="729.0" onAction="#logout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;" text="Logout" textFill="#f20000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   
+   </children>
+</AnchorPane>

@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="760.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DashAdminController">
+<AnchorPane id="AnchorPane" prefHeight="691" prefWidth="1354.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.DashAdminController">
     <children>
         <ToolBar prefHeight="40.0" prefWidth="1419.0" style="-fx-background-color: #2A3F54;" />
         
-        <VBox layoutY="40.0" prefHeight="690.0" prefWidth="140.0" style="-fx-background-color: #2A3F54;">
+        <VBox layoutY="20.0" prefHeight="734.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;">
             <children>
                 <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -59,7 +59,7 @@
                     </font>
                 </JFXButton>
                            
-                <JFXButton graphicTextGap="8.0" onAction="#setMessage" prefHeight="47.0" prefWidth="202.0" text="Message       " textAlignment="JUSTIFY" textFill="#a1aec4"  >
+                <JFXButton graphicTextGap="8.0" onAction="#setMessage" prefHeight="47.0" prefWidth="202.0" text="Message       " textAlignment="JUSTIFY" textFill="#a1aec4">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -71,12 +71,84 @@
                         <Font name="System Bold" size="21.0" />
                     </font>
                 </JFXButton>
+            <JFXButton fx:id="Donation" graphicTextGap="8.0" onAction="#Donation" prefHeight="47.0" prefWidth="202.0" text=" Donation       " textAlignment="JUSTIFY" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/aa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#setProduit" prefHeight="47.0" prefWidth="202.0" text="Produit" textAlignment="CENTER" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/43777.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#setCat" prefHeight="47.0" prefWidth="202.0" text="Cat Produit" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Produit/icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="affichageC" alignment="BOTTOM_LEFT" onAction="#indexCamp" prefHeight="47.0" prefWidth="202.0" text="camp" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Produit/icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="affichageR" alignment="BOTTOM_LEFT" onAction="#indexRefugie" prefHeight="47.0" prefWidth="202.0" text="Refugier" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Produit/icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="lE" alignment="BOTTOM_LEFT" onAction="#lstE" prefHeight="47.0" prefWidth="202.0" text="Evenement" textFill="#a1aec4">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Produit/icons/userb.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
            
             </children>
         </VBox>
       
-        <AnchorPane fx:id="holderPane" layoutX="200.0" layoutY="40.0" prefHeight="713.0" prefWidth="1219.0" />
-        <JFXButton onAction="#logout" layoutY="729.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;" text="Logout" textFill="#f20000">
+        <AnchorPane fx:id="holderPane" layoutX="200.0" layoutY="31.0" prefHeight="722.0" prefWidth="1219.0" />
+        <JFXButton layoutY="664.0" onAction="#logout" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #2A3F54;" text="Logout" textFill="#f20000">
             <font>
                 <Font name="System Bold" size="15.0" />
             </font>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="indexPane" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Camp.Controller.AjouterCampContoller">
+   <children>
+      <Label layoutX="32.0" layoutY="197.0" text="Nom" textFill="#2b860d">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="14.0" text="Ajouter un nouveau camp">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="266.0" text="Adresse" textFill="#2b860d">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="334.0" text="Nbr refugier" textFill="#2b860d">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="428.0" text="Responsable" textFill="#2b860d">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="responsable" layoutX="179.0" layoutY="426.0" prefWidth="150.0" />
+      <Pane fx:id="cancel" layoutX="753.0" layoutY="14.0" onMouseClicked="#cancel" prefHeight="45.0" prefWidth="50.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cancel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton fx:id="ajouter" buttonType="RAISED" layoutX="462.0" layoutY="511.0" onAction="#addCamp" style="-fx-background-color: #09e2a7;" text="Ajouter" textFill="WHITE" />
+      <JFXTextField fx:id="nbrefugier" labelFloat="true" layoutX="179.0" layoutY="332.0" prefHeight="25.0" prefWidth="150.0" promptText="nbr refugier">
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXTextField>
+      <JFXTextField fx:id="adresse" labelFloat="true" layoutX="179.0" layoutY="265.0" prefHeight="25.0" prefWidth="150.0" promptText="adresse">
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXTextField>
+      <JFXTextField fx:id="nom" labelFloat="true" layoutX="179.0" layoutY="196.0" prefHeight="25.0" prefWidth="150.0" promptText="nom">
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

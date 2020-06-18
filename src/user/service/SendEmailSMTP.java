@@ -28,7 +28,7 @@ public class SendEmailSMTP {
      // String to = "lahbib.fedi@gmail.com";//change accordingly
 
       // Sender's email ID needs to be mentioned
-      //String from = "moez.taieb@esprit.tn";//change accordingly
+      String from = "moez.taieb@esprit.tn";//change accordingly
       final String username = "pidevesprit2020@gmail.com";//change accordingly
       final String password = "esprit.2020";//change accordingly
 
@@ -54,7 +54,7 @@ public class SendEmailSMTP {
          Message message = new MimeMessage(session);
 
          // Set From: header field of the header.
-         message.setFrom(new InternetAddress(username));
+         message.setFrom(new InternetAddress(from));
 
          // Set To: header field of the header.
          message.setRecipients(Message.RecipientType.TO,
@@ -72,9 +72,6 @@ public class SendEmailSMTP {
          System.out.println("Sent message successfully....");
 
       } catch (MessagingException e) {
-          
-                   System.out.println("Sent message error....");
-
             throw new RuntimeException(e);
       }
    }

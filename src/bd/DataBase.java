@@ -17,8 +17,9 @@ import javafx.scene.control.Alert;
 public class DataBase {
     //URL de connexion
 
+    
     //private String url = "jdbc:mysql://localhost/pidev2020";
-    private String url = "jdbc:mysql://localhost/test";
+    private String url = "jdbc:mysql://localhost/pidevint";
 
     //Nom du user
     private String user = "root";
@@ -26,6 +27,7 @@ public class DataBase {
     private String passwd = "";
     //Objet Connection
     private static Connection connect;
+     static DataBase ds;
 
     //Constructeur privé
     private DataBase() {
@@ -47,6 +49,18 @@ public class DataBase {
         if (connect == null) {
             new DataBase();
         }
+        return connect;
+    }
+    
+      public static DataBase getInstance1(){
+        if(ds==null)
+        {
+            ds= new DataBase();
+        }
+        
+        return ds;
+    }
+     public Connection getCnx() {
         return connect;
     }
 }

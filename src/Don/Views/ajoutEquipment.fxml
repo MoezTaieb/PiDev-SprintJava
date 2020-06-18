@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Don.Controller.AjoutEquipmentController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="275.0" prefWidth="690.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+         <children>
+            <Label layoutX="14.0" layoutY="60.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="nom du l equipment" />
+            <Label layoutX="14.0" layoutY="116.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="nombre s equipe" />
+            <Label layoutX="10.0" layoutY="167.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #6a7d9a;" text="Categorie d Equipment" />
+            <JFXButton fx:id="ajouter" layoutX="217.0" layoutY="221.0" onAction="#addEquipment" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #26B99A;" text="valider" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="43.0" prefHeight="3.0" prefWidth="680.0" />
+            <Label layoutX="14.0" layoutY="7.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="ajouter equipment" />
+            <ChoiceBox fx:id="catid" layoutX="208.0" layoutY="164.0" prefHeight="32.0" prefWidth="207.0" />
+            <JFXTextField fx:id="noms" layoutX="191.0" layoutY="52.0" prefHeight="30.0" prefWidth="309.0" />
+            <JFXTextField fx:id="nb" layoutX="191.0" layoutY="100.0" prefHeight="30.0" prefWidth="309.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="421.0" layoutY="346.0" prefHeight="275.0" prefWidth="647.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: white;">
+         <children>
+            <Separator layoutX="10.0" layoutY="43.0" prefHeight="3.0" prefWidth="680.0" />
+            <Label layoutX="14.0" layoutY="7.0" prefHeight="30.0" prefWidth="333.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="historique de votre donnation" />
+            <TableView fx:id="table" layoutX="46.0" layoutY="61.0" prefHeight="200.0" prefWidth="583.0">
+               <columns>
+                  <TableColumn fx:id="id" minWidth="0.0" prefWidth="0.0" text="id" />
+                  <TableColumn fx:id="nom" prefWidth="88.0" text="nom" />
+                  <TableColumn fx:id="etat" prefWidth="112.0" text="etat" />
+                  <TableColumn fx:id="nb1" prefWidth="126.0" text="nb" />
+                  <TableColumn fx:id="catid1" prefWidth="157.0" text="nom categorie" />
+                  <TableColumn fx:id="date" prefWidth="98.0" text="date" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
